@@ -1,0 +1,22 @@
+﻿@model CadastroAluno.Models.AlunoViewModel
+@{
+}
+
+<h1>Salvar Novo Aluno</h1>
+
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Nome</label>
+        <input type="text" class="form-control" asp-for="Nome">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">E-mail</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" asp-for="DataNascimento">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
